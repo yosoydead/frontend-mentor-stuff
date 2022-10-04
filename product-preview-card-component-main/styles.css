@@ -1,0 +1,38 @@
+:root {
+    --ff-primary: 'Fraunces', serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    /* 14px */
+    --fs-default: 0.875rem; 
+
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue:  hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: var(--fs-default);
+    background-color: var(--cream);
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
