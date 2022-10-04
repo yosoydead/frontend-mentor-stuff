@@ -44,3 +44,59 @@ html {
     width: 100vw;
 }
 
+body {
+    background-color: var(--lightGray-color);
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-default);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#QR-Card {
+    background-color: var(--white-color);
+    padding: var(--padding-default);
+    border-radius: var(--border-radius-big);
+    max-width: 16em;
+    -webkit-box-shadow: -12px 12px 12px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: -12px 12px 12px 0px rgba(0,0,0,0.09);
+    box-shadow: -12px 12px 12px 0px rgba(0,0,0,0.09);
+}
+
+#QR-Card--figure {
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
+    display: flex;
+    margin-bottom: var(--margin-default);
+}
+
+#QR-Card--figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#QR-Card--description h2 {
+    line-height: 1.3;
+    margin-bottom: var(--margin-default);
+}
+
+#QR-Card--description p {
+    color: var(--grayishBlue-color);
+    margin-bottom: var(--margin-default);
+}
