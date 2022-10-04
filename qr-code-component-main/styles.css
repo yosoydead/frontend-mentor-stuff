@@ -1,0 +1,46 @@
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --lightGray-color: hsl(212, 45%, 89%);
+    --grayishBlue-color: hsl(220, 15%, 55%);
+    --darkBlue-color: hsl(218, 44%, 22%);
+
+    --ff-primary: 'Outfit', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --font-size-default: .9375rem;
+    --font-size-h2: 1.25rem;
+
+    --border-radius-small: 0.625rem;
+    --border-radius-big: .9375rem;
+
+    --margin-default: 1rem;
+    --padding-default: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    font-weight: var(--font-weight-normal);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--font-weight-bold);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
