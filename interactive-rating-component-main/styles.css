@@ -42,11 +42,13 @@ main {
 
 .text-uppercase { text-transform: uppercase; }
 
-#Review-Modal {
+#Review-Modal,
+#Review-Result {
     max-width: 320px;
     padding: 24px;
     background-color: var(--darkBlue);
     border-radius: 10px;
+    /* perspective: 1000px; */
 }
 
 #Review-Modal button {
@@ -81,7 +83,8 @@ main {
     margin-bottom: 20px;
 }
 
-#Review-Modal--body h2, p {
+#Review-Modal--body h2,
+#Review-Modal--body p {
     margin-bottom: 20px;
 }
 
@@ -110,4 +113,29 @@ main {
 #Review-Modal--body-rating ul .rating-select.selected {
     background-color: var(--lightGrey);
     color: var(--white);
+}
+
+#Review-Result {
+    
+}
+
+#Review-Result--icon,
+#Review-Result--content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#Review-Result--content div p {
+    padding: 5px 10px;
+    background-color: var(--mediumGrey);
+    border-radius: 20px;
+    color: var(--orange);
+}
+
+#Review-Result--content h2,
+#Review-Result--content > p {
+    text-align: center;
+    margin-bottom: 20px;
 }
