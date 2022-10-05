@@ -1,0 +1,113 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(217, 15%, 27%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-uppercase { text-transform: uppercase; }
+
+#Review-Modal {
+    max-width: 320px;
+    padding: 24px;
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+}
+
+#Review-Modal button {
+    outline: none;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+
+#Review-Modal button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+#Review-Modal--icon {
+    margin-bottom: 20px;
+}
+
+#Review-Modal--icon img {
+    display: inline-block;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#Review-Modal--body {
+    margin-bottom: 20px;
+}
+
+#Review-Modal--body h2, p {
+    margin-bottom: 20px;
+}
+
+#Review-Modal--body-rating ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Review-Modal--body-rating ul .rating-select {
+    width: 40px;
+    height: 40px;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightGrey);
+}
+
+#Review-Modal--body-rating ul .rating-select:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#Review-Modal--body-rating ul .rating-select.selected {
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
