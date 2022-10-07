@@ -64,11 +64,9 @@ main {
 
 #Review-Modal {
     transform: perspective(1000px);
-    transition: 1s;
-    backface-visibility: hidden;
 }
 
-#Review:hover #Review-Modal {
+#Review.flipped #Review-Modal {
     transform: perspective(1000px) rotateY(180deg);
 }
 
@@ -78,10 +76,9 @@ main {
     left: 0;
     backface-visibility: hidden;
     transform: perspective(1000px) rotateY(-180deg);
-    transition: 1s;
 }
 
-#Review:hover #Review-Result {
+#Review.flipped #Review-Result {
     transform: perspective(1000px) rotateY(0deg);
 }
 
@@ -90,8 +87,9 @@ main {
     max-width: 320px;
     padding: 24px;
     background-color: var(--darkBlue);
+    backface-visibility: hidden;
     border-radius: 10px;
-    /* perspective: 1000px; */
+    transition: 1s;
 }
 
 #Review-Modal button {
