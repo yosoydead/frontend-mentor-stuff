@@ -54,21 +54,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.625em;
 }
 
 .text-uppercase { text-transform: uppercase; }
 
 #Review {
     position: relative;
-    padding: 10px;
 }
 
 #Review-Modal {
-    transform: perspective(1000px);
+    transform: perspective(62.5em);
 }
 
 #Review.flipped #Review-Modal {
-    transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(62.5em) rotateY(180deg);
 }
 
 #Review-Result {
@@ -76,20 +76,20 @@ main {
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    transform: perspective(1000px) rotateY(-180deg);
+    transform: perspective(62.5em) rotateY(-180deg);
 }
 
 #Review.flipped #Review-Result {
-    transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(62.5em) rotateY(0deg);
 }
 
 #Review-Modal,
 #Review-Result {
-    max-width: 320px;
-    padding: 24px;
+    max-width: 22.5em;
+    padding: 1.5em;
     background-color: var(--darkBlue);
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 0.625em;
     transition: 1s;
 }
 
@@ -99,9 +99,9 @@ main {
     background-color: var(--orange);
     color: var(--white);
     width: 100%;
-    padding: 14px 0;
-    border-radius: 20px;
-    letter-spacing: 3px;
+    padding: 0.875em 0;
+    border-radius: 1.25em;
+    letter-spacing: 0.188em;
     transition: 0.5s;
 }
 
@@ -112,23 +112,23 @@ main {
 }
 
 #Review-Modal--icon {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 #Review-Modal--icon img {
     display: inline-block;
     background-color: var(--mediumGrey);
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 #Review-Modal--body {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 #Review-Modal--body h2,
 #Review-Modal--body p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 #Review-Modal--body-rating ul {
@@ -137,8 +137,8 @@ main {
 }
 
 #Review-Modal--body-rating ul .rating-select {
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     background-color: var(--mediumGrey);
     border-radius: 50%;
     display: flex;
@@ -168,18 +168,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 #Review-Result--content div p {
-    padding: 5px 10px;
+    padding: 0.313em 0.625em;
     background-color: var(--mediumGrey);
-    border-radius: 20px;
+    border-radius: 1.25em;
     color: var(--orange);
 }
 
 #Review-Result--content h2,
 #Review-Result--content > p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
