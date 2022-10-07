@@ -40,6 +40,14 @@ main {
     width: 100%;
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    bottom: 0;
+}
+
 main #top-ball,
 main #bottom-ball {
     position: fixed;
@@ -68,15 +76,15 @@ main #bottom-ball img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0.625em;
     height: 100%;
 }
 
 .profile-card {
     background-color: white;
-    max-width: 370px;
+    max-width: 23.75em;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0.938em;
     text-transform: capitalize;
     overflow: hidden;
 }
@@ -85,7 +93,7 @@ main #bottom-ball img {
     background-image: url("./images/bg-pattern-card.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 130px;
+    height: 8.125em;
 }
 
 .profile-card--content {
@@ -105,12 +113,12 @@ main #bottom-ball img {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 3.75em;
 }
 
 .profile-card--content--profile-image img {
     border-radius: 50%;
-    padding: 5px;
+    padding: 0.313em;
 }
 
 .profile-card--content--profile-image span {
@@ -125,15 +133,15 @@ main #bottom-ball img {
 }
 
 .profile-card--content--info {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .profile-card--content--info div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 0.625em;
+    margin-bottom: 0.625em;
 }
 
 .profile-card--content--media-numbers {
@@ -142,10 +150,10 @@ main #bottom-ball img {
     justify-content: space-around;
     text-align: center;
     border-top: 1px solid var(--darkGray);
-    padding: 20px;
+    padding: 1.25em;
 }
 
 .profile-card--content--media-numbers h3 {
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 0.313em;
 }
