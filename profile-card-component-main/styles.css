@@ -40,6 +40,30 @@ main {
     width: 100%;
 }
 
+main #top-ball,
+main #bottom-ball {
+    position: fixed;
+    z-index: -1;
+}
+
+#top-ball {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#bottom-ball {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+main #top-ball img,
+main #bottom-ball img {
+    width: 100%;
+    height: 100%;
+}
+
 #Profile-Cards {
     display: flex;
     justify-content: center;
