@@ -7,29 +7,55 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main>
+    <section id="Profile-Cards">
+      <article class="profile-card">
+        <div class="profile-card--bg">
+          <img src="./images/bg-pattern-card.svg" alt="Profile card aqua background image with bubble pattern." />
+        </div>
 
-  80K
-  Followers
+        <div class="profile-card--content">
+          <figure>
+            <img src="./images/image-victor.jpg" alt="Profile image for user named Victor Crest" />
 
-  803K
-  Likes
+            <figcaption>
+              <div>
+                <h3>victor crest</h3>
+                <p>26</p>
+              </div>
+              <div>london</div>
+            </figcaption>
+          </figure>
 
-  1.4K
-  Photos
-  <div class="attribution">
+          <div class="profile-card--content--media-numbers">
+            <div>
+              <h2>80k</h2>
+              <p>followers</p>
+            </div>
+
+            <div>
+              <h2>803k</h2>
+              <p>likes</p>
+            </div>
+
+            <div>
+              <h2>1.4k</h2>
+              <p>photos</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Bogdan-Mircea Radu</a>.
+  </footer>
 </body>
 </html>

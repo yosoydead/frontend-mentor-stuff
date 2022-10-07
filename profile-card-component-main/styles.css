@@ -1,0 +1,28 @@
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-default: 1.125rem;
+    --ff-default: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--ff-default);
+    font-size: var(--fs-default);
+}
