@@ -60,6 +60,7 @@ main {
 
 #Review {
     position: relative;
+    padding: 10px;
 }
 
 #Review-Modal {
@@ -101,6 +102,7 @@ main {
     padding: 14px 0;
     border-radius: 20px;
     letter-spacing: 3px;
+    transition: 0.5s;
 }
 
 #Review-Modal button:hover {
@@ -143,6 +145,7 @@ main {
     justify-content: center;
     align-items: center;
     color: var(--lightGrey);
+    transition: 0.5s;
 }
 
 #Review-Modal--body-rating ul .rating-select:hover {
