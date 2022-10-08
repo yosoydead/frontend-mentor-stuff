@@ -29,6 +29,12 @@ body {
     background-color: var(--veryDarkBlue);
     font-size: var(--fs-default);
     color: var(--slightlyTransparentWhite);
+    font-family: var(--ff-primary);
+    /* font-weight: var(--fw-regular); */
+}
+
+main {
+    padding: 20px;
 }
 
 footer {
@@ -42,6 +48,8 @@ h1,
 h2,
 h3 {
     color: var(--white);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
 }
 
 .color-accent {
@@ -50,4 +58,60 @@ h3 {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+#Stats-Preview {
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Stats-Preview--image-banner {
+    display: flex;
+    position: relative;
+}
+
+#Stats-Preview--image-banner--tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--softViolet);
+    opacity: 0.5;
+}
+
+#Stats-Preview--image-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#Stats-Preview--text-content {
+    padding: 30px;
+    text-align: center;
+}
+
+#Stats-Preview--text-content > h2 {
+    margin-bottom: 20px;
+}
+
+#Stats-Preview--text-content > p {
+    margin-bottom: 30px;
+}
+
+#Stats-Preview--text-content--numbers > div {
+    margin-bottom: 20px;
+}
+
+#Stats-Preview--text-content--numbers > div:last-child {
+    margin-bottom: 0;
+}
+
+#Stats-Preview--text-content--numbers h3 {
+    margin-bottom: 10px;
+}
+
+#Stats-Preview--text-content--numbers p {
+    font-size: 13px;
+    letter-spacing: 1px;
 }
