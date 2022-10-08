@@ -1,0 +1,53 @@
+:root {
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.6);
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-default: 0.938rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font-size: var(--fs-default);
+    color: var(--slightlyTransparentWhite);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--white);
+}
+
+.color-accent {
+    color: var(--softViolet);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
