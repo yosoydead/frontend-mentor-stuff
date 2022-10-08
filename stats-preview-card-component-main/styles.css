@@ -62,7 +62,7 @@ h3 {
 
 #Stats-Preview {
     background-color: var(--darkDesaturatedBlue);
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -97,6 +97,7 @@ h3 {
 
 #Stats-Preview--text-content > p {
     margin-bottom: 30px;
+    line-height: 24px;
 }
 
 #Stats-Preview--text-content--numbers > div {
@@ -114,4 +115,49 @@ h3 {
 #Stats-Preview--text-content--numbers p {
     font-size: 13px;
     letter-spacing: 1px;
+}
+
+@media screen and (min-width: 375px) {
+    #Stats-Preview--text-content--numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Stats-Preview--text-content--numbers > div {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #Stats-Preview {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 900px;
+    }
+
+    #Stats-Preview div {
+        flex: 1 1 100%;
+    }
+
+    #Stats-Preview--text-content {
+        text-align: start;
+        padding: 50px;
+    }
+
+    
+    #Stats-Preview--text-content > h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    #Stats-Preview--text-content > p {
+        margin-bottom: 30px;
+    }
 }
