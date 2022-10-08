@@ -1,0 +1,161 @@
+:root {
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.6);
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-default: 0.938rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font-size: var(--fs-default);
+    color: var(--slightlyTransparentWhite);
+    font-family: var(--ff-primary);
+}
+
+main {
+    padding: 1.25em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--white);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
+}
+
+.color-accent {
+    color: var(--softViolet);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+#Stats-Preview {
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#Stats-Preview--image-banner {
+    display: flex;
+    position: relative;
+}
+
+#Stats-Preview--image-banner--tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--softViolet);
+    opacity: 0.5;
+}
+
+#Stats-Preview--image-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#Stats-Preview--text-content {
+    padding: 1.875em;
+    text-align: center;
+}
+
+#Stats-Preview--text-content > h2 {
+    margin-bottom: 1.25em;
+}
+
+#Stats-Preview--text-content > p {
+    margin-bottom: 1.875em;
+    line-height: 1.5em;
+}
+
+#Stats-Preview--text-content--numbers > div {
+    margin-bottom: 1.25em;
+}
+
+#Stats-Preview--text-content--numbers > div:last-child {
+    margin-bottom: 0;
+}
+
+#Stats-Preview--text-content--numbers h3 {
+    margin-bottom: 0.625em;
+}
+
+#Stats-Preview--text-content--numbers p {
+    font-size: 0.813em;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 375px) {
+    #Stats-Preview--text-content--numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Stats-Preview--text-content--numbers > div {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #Stats-Preview {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 900px;
+    }
+
+    #Stats-Preview div {
+        flex: 1 1 100%;
+    }
+
+    #Stats-Preview--text-content {
+        text-align: start;
+        padding: 3.125em;
+    }
+
+    #Stats-Preview--text-content > h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    #Stats-Preview--text-content > p {
+        margin-bottom: 1.875em;
+    }
+}
