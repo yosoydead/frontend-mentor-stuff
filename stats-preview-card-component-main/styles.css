@@ -150,10 +150,9 @@ h3 {
         padding: 3.125em;
     }
 
-    
     #Stats-Preview--text-content > h2 {
-        font-size: 1.75em;
-        line-height: 2.125em;
+        font-size: 28px;
+        line-height: 34px;
     }
 
     #Stats-Preview--text-content > p {
