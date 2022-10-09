@@ -7,31 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <section id="Order-Summary">
+      <article id="Order-Summary--Card">
+        <div id="Order-Summary--Card--Illustration">
+          <img src="./images/illustration-hero.svg" alt="Image, with blue background over city, of a person dancing while listening to music on headphones attached to a mobile phone.">
+        </div>
 
-  Order Summary
+        <div id="Order-Summary--Card--Contents">
+          <h2 class="text-capitalize">order summary</h2>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
 
-  Annual Plan
-  $59.99/year
+          <div id="Order-Summary--Card--Contents--Chosen-Plan">
+            <img src="./images/icon-music.svg" alt="">
 
-  Change
+            <div>
+              <h4 class="text-capitalize">anual plan</h4>
+              <p>$59.99/year</p>
+            </div>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
+            <a href="#" class="text-capitalize text-bold">change</a>
+          </div>
+
+          <button class="text-capitalize text-bolder">proceed to payment</button>
+          <button class="text-capitalize text-bolder">cancel order</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Bogdan-Mircea Radu</a>.
+  </footer>
 </body>
 </html>
