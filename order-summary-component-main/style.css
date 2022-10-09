@@ -21,7 +21,7 @@
 html,
 body {
     width: 100%;
-    height: 100;
+    height: 100%;
 }
 
 h1,
@@ -36,6 +36,11 @@ h5 {
 body {
     font-weight: var(--fw-regular);
     color: var(--desaturatedBlue);
+    background-color: var(--veryPaleBlue);
+}
+
+main {
+    padding: 20px;
 }
 
 footer {
@@ -45,7 +50,69 @@ footer {
     text-align: center;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
 .text-capitalize { text-transform: capitalize; }
 
 .text-bold { font-weight: var(--fw-bold); }
 .text-bolder { font-weight: var(--fw-bolder); }
+
+#Order-Summary--Card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#Order-Summary--Card--Illustration img {
+    width: 100%;
+    height: 100%;
+}
+
+#Order-Summary--Card--Contents {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan a {
+    color: var(--brightBlue);
+    transition: 0.3s;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+
+#Order-Summary--Card--Contents--Actions button {
+    width: 100%;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+#Order-Summary--Card--Contents--Actions button:hover {
+    cursor: pointer;
+}
+
+#Order-Summary--Card--Contents--Actions button:first-child {
+    background-color: var(--brightBlue);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 6px var(--paleBlue);
+}
+
+#Order-Summary--Card--Contents--Actions button:first-child:hover {
+    /* background-color: var(--paleBlue); */
+    opacity: 0.6;
+}
+
+#Order-Summary--Card--Contents--Actions button:last-child {
+    color: var(--desaturatedBlue);
+}
+
+#Order-Summary--Card--Contents--Actions button:last-child:hover {
+    color: var(--darkBlue);
+}
