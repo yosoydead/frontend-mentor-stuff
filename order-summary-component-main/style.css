@@ -36,7 +36,7 @@ h5 {
 body {
     font-weight: var(--fw-regular);
     color: var(--desaturatedBlue);
-    background-color: var(--veryPaleBlue);
+    background-color: var(--paleBlue);
 }
 
 main {
@@ -57,14 +57,20 @@ button {
 }
 
 .text-capitalize { text-transform: capitalize; }
+.text-centered { text-align: center; }
 
 .text-bold { font-weight: var(--fw-bold); }
 .text-bolder { font-weight: var(--fw-bolder); }
 
+.default-margin-bottom { margin-bottom: 20px; }
+
 #Order-Summary--Card {
     border-radius: 20px;
     overflow: hidden;
+    max-width: 375px;
 }
+
+#Order-Summary--Card--Illustration { display: flex; }
 
 #Order-Summary--Card--Illustration img {
     width: 100%;
@@ -76,9 +82,17 @@ button {
     background-color: white;
 }
 
+#Order-Summary--Card--Contents--Chosen-Plan {
+    background-color: var(--veryPaleBlue);
+    border-radius: 10px;
+    padding: 20px;
+}
+
 #Order-Summary--Card--Contents--Chosen-Plan a {
     color: var(--brightBlue);
     transition: 0.3s;
+    display: block;
+    text-align: center;
 }
 
 #Order-Summary--Card--Contents--Chosen-Plan a:hover {
@@ -86,10 +100,17 @@ button {
     opacity: 0.6;
 }
 
+#Order-Summary--Card--Contents--Chosen-Plan--Summary {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
 
 #Order-Summary--Card--Contents--Actions button {
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     transition: 0.3s;
 }
 
@@ -105,14 +126,29 @@ button {
 }
 
 #Order-Summary--Card--Contents--Actions button:first-child:hover {
-    /* background-color: var(--paleBlue); */
     opacity: 0.6;
 }
 
 #Order-Summary--Card--Contents--Actions button:last-child {
     color: var(--desaturatedBlue);
+    padding: 0;
 }
 
 #Order-Summary--Card--Contents--Actions button:last-child:hover {
     color: var(--darkBlue);
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #Order-Summary--Card--Contents--Chosen-Plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
