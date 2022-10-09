@@ -1,0 +1,158 @@
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+    --ff-primary: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--darkBlue);
+    font-weight: var(--fw-bolder);
+}
+
+body {
+    font-weight: var(--fw-regular);
+    color: var(--desaturatedBlue);
+    background-color: var(--paleBlue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
+.text-capitalize { text-transform: capitalize; }
+.text-centered { text-align: center; }
+
+.text-bold { font-weight: var(--fw-bold); }
+.text-bolder { font-weight: var(--fw-bolder); }
+
+.default-margin-bottom { margin-bottom: 20px; }
+
+.border-radius-big { border-radius: 20px; }
+.border-radius-small { border-radius: 10px; }
+
+#Order-Summary--Card {
+    overflow: hidden;
+    max-width: 375px;
+}
+
+#Order-Summary--Card--Illustration { display: flex; }
+
+#Order-Summary--Card--Illustration img {
+    width: 100%;
+    height: 100%;
+}
+
+#Order-Summary--Card--Contents {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan {
+    background-color: var(--veryPaleBlue);
+    padding: 20px;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan a {
+    color: var(--brightBlue);
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+#Order-Summary--Card--Contents--Chosen-Plan--Summary {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+#Order-Summary--Card--Contents--Actions button {
+    width: 100%;
+    padding: 15px 0;
+    transition: 0.3s;
+}
+
+#Order-Summary--Card--Contents--Actions button:hover {
+    cursor: pointer;
+}
+
+#Order-Summary--Card--Contents--Actions button:first-child {
+    background-color: var(--brightBlue);
+    color: white;
+    box-shadow: 0px 10px 20px 6px var(--paleBlue);
+}
+
+#Order-Summary--Card--Contents--Actions button:first-child:hover {
+    opacity: 0.6;
+}
+
+#Order-Summary--Card--Contents--Actions button:last-child {
+    color: var(--desaturatedBlue);
+    padding: 0;
+}
+
+#Order-Summary--Card--Contents--Actions button:last-child:hover {
+    color: var(--darkBlue);
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #Order-Summary--Card--Contents--Chosen-Plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
