@@ -37,6 +37,9 @@ body {
     font-weight: var(--fw-regular);
     color: var(--desaturatedBlue);
     background-color: var(--paleBlue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
 main {
@@ -64,8 +67,10 @@ button {
 
 .default-margin-bottom { margin-bottom: 20px; }
 
+.border-radius-big { border-radius: 20px; }
+.border-radius-small { border-radius: 10px; }
+
 #Order-Summary--Card {
-    border-radius: 20px;
     overflow: hidden;
     max-width: 375px;
 }
@@ -84,7 +89,6 @@ button {
 
 #Order-Summary--Card--Contents--Chosen-Plan {
     background-color: var(--veryPaleBlue);
-    border-radius: 10px;
     padding: 20px;
 }
 
@@ -104,6 +108,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -121,7 +126,6 @@ button {
 #Order-Summary--Card--Contents--Actions button:first-child {
     background-color: var(--brightBlue);
     color: white;
-    border-radius: 10px;
     box-shadow: 0px 10px 20px 6px var(--paleBlue);
 }
 
