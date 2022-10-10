@@ -1,0 +1,47 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --bgColor: hsl(217, 54%, 11%); /* (main BG) */
+    --cardBg: hsl(216, 50%, 16%); /*  (card BG) */
+    --veryDarkBlue: hsl(215, 32%, 27%); /*  (line) */
+    --white: hsl(0, 0%, 100%);
+
+    --fw-slim: 300;
+    --fw-normal: 400;
+    --fw-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--softBlue);
+    font-weight: var(--fw-normal);
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.text-white { color: var(--white); }
+.text-accent { color: var(--cyan); }
+.text-capitalize { text-transform: capitalize; }
+.text-slim { font-weight: var(--fw-slim); }
+.text-bold { font-weight: var(--fw-bold); }
