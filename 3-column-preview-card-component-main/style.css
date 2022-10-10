@@ -1,0 +1,157 @@
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+
+    --ff-secondary: 'Big Shoulders Display', cursive;
+    --ff-primary: 'Lexend Deca', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    color: var(--veryLightGray);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--transparentWhite);
+}
+
+.text-capitalize { text-transform: capitalize; }
+.text-uppercase { text-transform: uppercase; }
+
+#Car-Offers {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#sedans {
+    background-color: var(--brightOrange);
+}
+
+#sedans a {
+    color: var(--brightOrange);
+}
+
+#suvs {
+    background-color: var(--darkCyan);
+}
+
+#suvs a {
+    color: var(--darkCyan);
+}
+
+#luxury {
+    background-color: var(--veryDarkCyan);
+}
+
+#luxury a {
+    color: var(--veryDarkCyan);
+}
+
+.car-offer {
+    padding: 30px;
+}
+
+.car-offer h2 {
+    font-size: 34px;
+}
+
+.car-offer a {
+    background-color: var(--veryLightGray);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.car-offer a:hover {
+    background-color: transparent;
+    color: var(--veryLightGray) !important;
+    border: 2px solid var(--veryLightGray);
+}
+
+.car-offer p {
+    line-height: 26px;
+}
+
+.car-offer > * {
+    margin-bottom: 20px;
+}
+
+.car-offer a {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 425px) {
+    #Car-Offers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #Car-Offers > * {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #Car-Offers > * {
+        flex: 1 1 33%;
+        padding: 50px;
+        max-width: 280px;
+    }
+
+    .car-offer > * {
+        margin-bottom: 30px;
+    }
+
+    .car-offer > a {
+        margin-bottom: 0;
+    }
+}
