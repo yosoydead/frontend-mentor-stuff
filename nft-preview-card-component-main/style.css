@@ -42,6 +42,10 @@ footer {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .text-white { color: var(--white); }
 .text-accent { color: var(--cyan); }
 .text-capitalize { text-transform: capitalize; }
@@ -100,11 +104,6 @@ footer {
     padding-top: 15px;
 }
 
-.nft-card--creator a,
-.nft-card--description > a  {
-    text-decoration: none;
-}
-
 .nft-card--creator a:hover,
 .nft-card--description > a:hover h2 {
     color: var(--cyan);
@@ -116,6 +115,7 @@ footer {
     width: 30px;
     height: 30px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 .nft-card--creator img {
     width: 100%;
