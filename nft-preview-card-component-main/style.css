@@ -9,6 +9,7 @@
     --fw-slim: 300;
     --fw-normal: 400;
     --fw-bold: 600;
+    --ff-default: 'Outfit', sans-serif;
 }
 
 * {
@@ -27,6 +28,7 @@ body {
     background-color: var(--bgColor);
     color: var(--softBlue);
     font-weight: var(--fw-normal);
+    font-family: var(--ff-default);
 }
 
 main {
@@ -43,5 +45,88 @@ footer {
 .text-white { color: var(--white); }
 .text-accent { color: var(--cyan); }
 .text-capitalize { text-transform: capitalize; }
+.text-uppercase { text-transform: uppercase; }
 .text-slim { font-weight: var(--fw-slim); }
 .text-bold { font-weight: var(--fw-bold); }
+
+.nft-card {
+    border-radius: 20px;
+    background-color: var(--cardBg);
+    padding: 20px;
+    overflow: hidden;
+    max-width: 320px;
+}
+
+.nft-card--image {
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+}
+
+.nft-card--image img {
+    width: 100%;
+    height: 100%;
+}
+
+.nft-card--description > a {
+    padding: 20px 0;
+    display: inline-block;
+}
+.nft-card--description > a > h2 {
+    display: inline-block;
+}
+
+.nft-card--description > p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.nft-card--description--value-and-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nft-card--description--value-and-time > div {
+    display: flex;
+    gap: 5px;
+}
+
+.nft-card--creator {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid var(--veryDarkBlue);
+    padding-top: 15px;
+}
+
+.nft-card--creator a,
+.nft-card--description > a  {
+    text-decoration: none;
+}
+
+.nft-card--creator a:hover,
+.nft-card--description > a:hover h2 {
+    color: var(--cyan);
+}
+
+.nft-card--creator div {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.nft-card--creator img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
